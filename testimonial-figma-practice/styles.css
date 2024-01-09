@@ -1,0 +1,118 @@
+* {
+  --body-color: #e5e5e5;
+  --main-color: #d9381e;
+  --card-bg-color: #ededed;
+  --main-font: 'Luckiest Guy', cursive;
+  --secondary-font: 'PT Sans', sans-serif;
+  --subtext-color: #7a7a7a;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: var(--secondary-font);
+}
+
+h1, h3 {
+  font-family: var(--main-font);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  background-color: #fff;
+  max-width: 1152px;
+
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero__title {
+  color: #000;
+  -webkit-text-fill-color: var(--main-color);
+  -webkit-text-stroke: 1px;
+
+  font-size: 2.2rem;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 1em 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  padding-bottom: 7em;
+}
+
+.card-one, .card-two, .card-three {
+  background-color: var(--card-bg-color);
+
+  max-width: 244px;
+  padding: .7em;
+  border-radius: 20px;
+}
+
+.card-profile {
+  max-height: 149px;
+  padding: 1em;
+  border-radius: 50%;
+}
+
+.card-text {
+  font-size: 1.063rem;
+  padding-bottom: 2em;
+}
+
+.highlighted-text {
+  font-weight: 700;
+}
+
+.name-subtitle {
+  font-size: 1.176rem;
+  color: var(--main-color);
+
+  margin: 0;
+}
+
+.position-text {
+  color: var(--subtext-color);
+  margin: 0;
+  padding-bottom: 1.5em;
+}
+
+@media screen and (min-width: 646px) {
+  .hero {
+    margin-top: 2.4em;
+  }
+  .hero__title {
+    font-size: 3.402rem;
+    padding: 1.5em 0 .7em;
+  }
+}
+
+@media screen and (min-width: 973px) {
+  .card-container {
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 1011px) {
+  .hero {
+    margin-top: 5em;
+  }
+}
