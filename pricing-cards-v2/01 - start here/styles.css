@@ -36,6 +36,45 @@ h1 {
   padding: 2em;
   border-radius: 1em;
   margin: 0 0.5em;
+  position: relative;
+}
+
+.plan:hover .top-right {
+  top: 0;
+  right: 0;
+  border-radius: 0 1em 0 0;  
+  border-top: 2px solid #4e4e4e;
+  border-right: 2px solid #4e4e4e;
+}
+
+.plan:hover .top-left {
+  top: 0;
+  left: 0;
+  border-radius: 1em 0 0 0;
+  border-top: 2px solid #4e4e4e;
+  border-left: 2px solid #4e4e4e;
+}
+
+.plan:hover .bottom-left {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 0 1em;
+  border-bottom: 2px solid #4e4e4e;
+  border-left: 2px solid #4e4e4e;
+}
+
+.plan:hover .bottom-right {
+  bottom: 0;
+  right: 0;
+  border-radius: 0 0 1em 0;
+  border-bottom: 2px solid #4e4e4e;
+  border-right: 2px solid #4e4e4e;
+}
+
+.corner {
+  position: absolute;
+  height: 10px;
+  width: 10px;
 }
 
 .plan--light {
